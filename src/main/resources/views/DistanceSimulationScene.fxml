@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="800.0" prefWidth="1000.0"
+            xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="com.cps.signalprocessing.controller.DistanceSimulationController">
+    <Pane fx:id="graph1Root" layoutX="15.0" layoutY="15.0" prefHeight="150.0" prefWidth="970.0"/>
+    <Pane fx:id="graph2Root" layoutX="15.0" layoutY="180.0" prefHeight="150.0" prefWidth="970.0"/>
+    <Pane fx:id="graph3Root" layoutX="15.0" layoutY="345.0" prefHeight="150.0" prefWidth="970.0"/>
+    <Line endX="970.0" layoutX="15.0" layoutY="510.0"/>
+    <Label layoutX="15.0" layoutY="529.0" prefWidth="170.0" text="Simulator time unit period"/>
+    <TextField fx:id="simulatorTimeUnitTextField" layoutX="200.0" layoutY="525.0" text="0.1"/>
+    <Label layoutX="15.0" layoutY="569.0" prefWidth="170.0" text="Object velocity"/>
+    <TextField fx:id="objectVelocityTextField" layoutX="200.0" layoutY="565.0" text="-0.001"/>
+    <TextField fx:id="signalPropagationVelocityTextField" layoutX="200.0" layoutY="605.0" text="1.0"/>
+    <Label layoutX="15.0" layoutY="609.0" prefWidth="170.0" text="Signal propagation velocity"/>
+    <Label layoutX="515.0" layoutY="529.0" prefWidth="170.0" text="Sounding signal period"/>
+    <TextField fx:id="soundingSignalPeriodTextField" layoutX="700.0" layoutY="525.0" text="10.0"/>
+    <TextField fx:id="samplingFrequencyTextField" layoutX="700.0" layoutY="565.0" text="10.0"/>
+    <Label layoutX="515.0" layoutY="569.0" prefWidth="170.0" text="Sampling frequency"/>
+    <Label layoutX="515.0" layoutY="609.0" prefWidth="170.0" text="Buffer size"/>
+    <TextField fx:id="bufferSizeTextField" layoutX="700.0" layoutY="605.0" text="100"/>
+    <TextField fx:id="soundingPeriodTextField" layoutX="700.0" layoutY="645.0" text="5.0"/>
+    <Label layoutX="515.0" layoutY="649.0" prefWidth="170.0" text="Sounding period"/>
+    <Button fx:id="startSimulationButton" layoutX="15.0" layoutY="735.0" mnemonicParsing="false" prefHeight="50.0"
+            prefWidth="470.0" text="Start">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </Button>
+    <Button fx:id="stopSimulationButton" layoutX="515.0" layoutY="735.0" mnemonicParsing="false" prefHeight="50.0"
+            prefWidth="470.0" text="Stop">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </Button>
+    <Label layoutX="15.0" layoutY="680.0" prefHeight="20.0" prefWidth="100.0" text="Estimated:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="estimatedDistanceLabel" layoutX="130.0" layoutY="680.0" prefWidth="200.0" textAlignment="RIGHT">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="realDistanceLabel" layoutX="630.0" layoutY="680.0" prefWidth="200.0" textAlignment="RIGHT">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="515.0" layoutY="680.0" prefHeight="20.0" prefWidth="100.0" text="Real:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+</AnchorPane>
