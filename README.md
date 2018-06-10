@@ -7,8 +7,8 @@ Example usage:
 3. Press "Generate signal" button
 4. Generated signal will appear in the list view on the right and it will be automatically selected
 5. Press "Show graph" to display the signal amplitude in the time domain
-6. Adjust number of bins and press "Show histogram" to display the histogram of the amplitude
-Other options:
+6. Adjust number of bins and press "Show histogram" to display the histogram of the amplitude  
+Other options:  
 * signal addition, subtraction, multiplication, division
 * convolution and correlation
 * sampling
